@@ -176,6 +176,7 @@ main {
     display: grid;
     grid-template-columns: 3fr 1.5fr;
     grid-template-rows: 1fr 1fr;
+    padding: 5px 10px;
 }
 
 main>div {
@@ -191,7 +192,7 @@ main>div {
     display: grid;
 }
 
-.announcements > .display {
+.display {
     background-color: var(--theme-color);
     padding: 10px;
     border-radius: 10px;
@@ -204,10 +205,28 @@ main>div {
     padding: 5px;
 }
 
+.trending .display > div {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    align-items: center;
+    gap: 5px;
+}
+
+.trending .display img {
+    width: 35px;
+    height: 35px;
+}
+
+.trending .display p {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.trending .display p::first-line {
+    font-weight: bold;
+}
+
 .announcements > .display p:first-line {
     font-weight: bold;
     font-size: 0.8rem;
-}
-
-.trending {
 }
